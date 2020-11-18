@@ -1,6 +1,6 @@
 {
   "name": "dstu7564",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "dstu7564 hash function implementation",
   "main": "dstu7564.js",
   "scripts": {

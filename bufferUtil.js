@@ -4,8 +4,8 @@ function uint8_to_uint64(in8) {
   let idx64;
   let shift;
   for (let idx = 0; idx < in8_len; idx++) {
-    idx64 = Math.floor(idx / 8);
-    shift = (idx % 8) * 8;
+    idx64 = idx >>> 3;
+    shift = (idx & 7) << 3;
     out64[idx64] = (BigInt(in8[idx]) << BigInt(shift)) | out64[idx64];
   }
   return out64;
